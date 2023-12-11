@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 15, 15);
+}
+
+h1{
+    color: rgb(200, 200, 200);
+}
+
+p{
+    color: rgb(15, 15, 15);
+}
+/*
+img{
+    height: 300px;
+    width: 400px;
+}
+*/
+
+#Picture_1{
+    height: 200px;
+    width: 600px;
+    border: 1px solid red !important;
+    overflow: auto;
+}
+
+#Pic_1{
+    height: 200px;
+    width: 600px;
+}
+
+.whiteColorChanger{
+    color: antiquewhite;
+}
+
+div{
+    display: inline-block;
+    width: 45%;
+}

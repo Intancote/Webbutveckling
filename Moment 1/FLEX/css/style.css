@@ -1,0 +1,69 @@
+body{
+    /* Ta bort utfyllnad på kanter */
+    padding: 0;
+    margin: 0;
+}
+
+/* Anropa header */
+#header{
+    background-color: lightgray;
+    height: 40px;
+}
+
+/* Anropa main div för att skapa en ny layout */
+
+#main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+/* Anropa Meny */
+#meny{
+    flex: 2;
+    background-color: lightblue;
+}
+
+#content{
+    flex: 8;
+    background-color: yellow;
+
+    /* Ändrar på innehållet i Content */
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom{
+    /* Ändrar på innehållet i bottom */
+    display: flex;
+    flex-direction: row;
+
+    /* Flyttar Footer div längre ner */
+    margin-bottom: 38%;
+}
+
+#bottom > div{
+    flex: 3;
+    height: 150px;
+    border: 1px solid gray;
+}
+
+#Column1{
+    background-color: lightgray;
+}
+
+#Column2{
+    background-color: darkred;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#Column3{
+    background-color: blue;
+}
+
+#footer{
+    background-color: red;
+    height: 30px;
+}

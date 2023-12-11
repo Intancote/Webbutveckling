@@ -1,0 +1,51 @@
+html{
+    font-family: Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+    padding: 5em;
+}
+
+article{
+    background-color: rgb(233, 233, 233);
+}
+
+footer{
+    background-color: rgb(255, 255, 0);
+    text-align: center;
+}
+
+a:link{
+    color: rgb(139, 0, 0);
+    text-decoration: none;
+}
+
+.left{
+    display: inline-block;
+    width: 48%;
+}
+
+.right{
+    display: inline-block;
+    width: 48%;
+}
+
+.left img{
+    width: 75%;
+    height: 75%;
+}
+
+.right img{
+    width: 45%;
+    height: 75%;
+}
+
+.left h2 {
+    color: blue;
+}
+
+.right h2 {
+    color: orange;
+}

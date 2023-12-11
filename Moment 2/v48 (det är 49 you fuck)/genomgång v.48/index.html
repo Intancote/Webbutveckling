@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nature Website</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+
+<body>
+	<div class="header ">
+		<h1>Min Natur Webbplats</h1>
+	</div>
+
+	<!-- Min meny -->
+	<div class="meny">
+		<!-- UL Lista  -->
+		<ul>
+			<li> <a href="index.html"> Hem </a> </li>
+			<li> <a href="index.html"> Hem </a> </li>
+			<li> <a href="index.html"> Hem </a> </li>
+			<li> <a href="index.html"> Hem </a> </li>
+		</ul>
+	</div>
+
+	<!-- Section 1 / Om -->
+	<div class="row">
+		<div class="content">
+
+
+			<!-- vänster div för bilder -->
+			<div class="left col-8 ">
+
+				<!-- Alt 1 -->
+				<!--<img class="col-4" src="./img/image.jpg" alt="Bild 1">
+				<p>
+				<h4> Bild 1</h4>
+				</p>
+				<img class="col-4" src="./img/image.jpg" alt="">
+				<img class="col-4" src="./img/image.jpg" alt="">
+				<img class="col-4" src="./img/image.jpg" alt="">-->
+
+				<!-- Alternativ 2 -->
+				<div class="images col-6">
+					<img src="./img/image.jpg" alt="Bild of Nature">
+					<p> Bildbeskrvning 1</p>
+				</div>
+				<div class="images col-6">
+					<img src="./img/image.jpg" alt="Bild of Nature">
+					<p> Bildbeskrvning 1</p>
+				</div>
+				<div class="images col-6">
+					<img src="./img/image.jpg" alt="Bild of Nature">
+					<p> Bildbeskrvning 1</p>
+				</div>
+				<div class="images col-6">
+					<img src="./img/image.jpg" alt="Bild of Nature">
+					<p> Bildbeskrvning 1</p>
+				</div>
+
+			</div>
+
+			<!-- Höger div för text -->
+			<div class="right col-4 ">
+				<h3> About the Nature of Sweden</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur natus voluptatem labore
+					aspernatur id, beatae explicabo nihil, adipisci obcaecati nulla numquam placeat optio. Eveniet
+					aperiam eum quisquam omnis voluptates ipsum velit laborum nobis natus. Dolore dolorum eum placeat
+					debitis voluptates perferendis! Beatae libero aliquid cupiditate recusandae dignissimos. Sequi
+					praesentium aliquam error natus quod tempore autem doloremque quia dignissimos fugit, repudiandae
+					corrupti et labore modi fuga atque laboriosam optio provident officiis facilis reiciendis. Repellat
+					cum commodi veniam velit excepturi, ducimus nostrum, illo ratione aspernatur provident accusamus
+					blanditiis magnam? Facilis, magni dolore? Optio non eveniet, alias culpa recusandae dolorum
+					exercitationem perferendis neque?</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- Section 2 LIST - Right and left -->
+
+	<div class="service">
+		<div class="row">
+
+			<!-- Left för listor -->
+			<div class="myList col-6 tmpBorder">
+				<h3> Most beautiful places</h3>
+				<ol>
+					<li> Karlstad</li>
+					<li> Malmö</li>
+					<li> Liége</li>
+					<li> Las Vegas </li>
+				</ol>
+			</div>
+
+			<!-- right div - för tabell -->
+
+			<div class="myTable col-6 tmpBorder">
+
+				<h3> Places to visit </h3>
+				<table>
+
+					<tr> <!-- Tabell rad /tr -->
+						<th> Country</th> <!-- Tabell huvud/ th -->
+						<th> Population</th> <!-- Tabell huvud/ th -->
+						<th> Language</th> <!-- Tabell huvud/ th -->
+						<th> Continent</th> <!-- Tabell huvud/ th -->
+					</tr>
+
+					<tr>
+						<td> Karlstad </td> <!-- Tabelldata  -->
+						<td> 90.000 </td> <!-- Tabelldata  -->
+						<td> Swedish </td> <!-- Tabelldata  -->
+						<td> Europe </td> <!-- Tabelldata  -->
+					</tr>
+
+					<tr>
+						<td> Liège </td> <!-- Tabelldata  -->
+						<td> 140.000 </td> <!-- Tabelldata  -->
+						<td> French </td> <!-- Tabelldata  -->
+						<td> Europe </td> <!-- Tabelldata  -->
+					</tr>
+
+					<tr>
+						<td> Lagos </td> <!-- Tabelldata  -->
+						<td> 260.000 </td> <!-- Tabelldata  -->
+						<td> Many </td> <!-- Tabelldata  -->
+						<td> Africa </td> <!-- Tabelldata  -->
+					</tr>
+
+
+					<tr>
+						<td> Mexico </td> <!-- Tabelldata  -->
+						<td> 390.000 </td> <!-- Tabelldata  -->
+						<td> Spanish </td> <!-- Tabelldata  -->
+						<td> South America </td> <!-- Tabelldata  -->
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- Section 4 Form -->
+
+	<!-- Section 5 Contact -->
+	<div class="contactForm">
+		<div class="row">
+			<h3> Contact us</h3>
+
+			<!--  Formulär -->
+			<form action="tack.html" method="post">
+
+				<!-- Input för att kunna skriva namn -->
+				<div class="col-4">
+					<label for="name"> Name </label>
+					<input type="text" name="name" id="name" placeholder="Enter your name">
+				</div>
+
+				<!-- Input för att kunna skriva namn -->
+				<div class="col-4">
+					<label for="email"> Email</label>
+					<input type="email" name="email" id="email" placeholder="Enter your email">
+				</div>
+
+				<!-- Rullgarding för att välja ämne -->
+				<div class="col-4">
+					<label for="topic"> Topic </label>
+					<select name="topic" id="topic">
+						<option value="topic1"> Topic 1</option>
+						<option value="topic2"> Topic 2</option>
+						<option value="topic3"> Topic 3</option>
+					</select>
+				</div>
+
+				<!-- Textfält för att kunna skriva medellande -->
+				<div class="col-12">
+					<label for="message"></label>
+					<textarea name="message" id="message" placeholder="Add a message"></textarea>
+				</div>
+
+
+				<!-- Alt 1 knappar-->
+				<!--<input type="submit" name="submit" value="Send Message">-->
+
+				<!-- Alt 2 knappar-->
+				<button type="submit" name="submit" id="submit"> SEND NOW</button>
+			</form>
+
+
+		</div>
+
+
+	</div>
+
+
+</body>
+
+
+
+
+</html>
