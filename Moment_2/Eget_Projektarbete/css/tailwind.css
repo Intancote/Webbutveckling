@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-pill-nav {
+    @apply container mx-auto px-48 text-center pt-4
+}
+
+.nav-main-nav-span {
+    @apply flex items-center justify-center mocha bg-crust rounded-2xl p-6
+}
+.nav-main-div-span {
+    @apply flex items-center flex-shrink-0 text-white mr-6
+}
+
+.nav-main-span-span {
+    @apply font-semibold text-xl tracking-tight text-center
+}
+
+.nav-option-div {
+    @apply w-full block flex-grow lg:flex lg:items-center lg:w-auto
+}
+
+.nav-option-div-2 {
+    @apply text-sm lg:flex-grow
+}
+
+.cool-nav-text {
+    @apply block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white rounded-full py-2 px-4
+}
