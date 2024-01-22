@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="main-pill-nav">
-        <nav class="nav-main">
-            <div class="nav-option-div">
-                <h2 class="nav-option-h2">
-                    My Website
-                </h2>
-                <a href="/" class="cool-nav-text">
-                    Home
-                </a>
-                <a href="/contact.html" class="cool-nav-text">
-                    Contact
-                </a>
-                <a href="/about.html" class="cool-nav-text">
-                    About
-                </a>
-            </div>
-        </nav>
+    <div id="navbar">
+        <script src="./getNavbar.js"></script>
     </div>
+    <div id="contentContainer" class="contentContainer">
+        <div class="subContentContainer">
+            <button id="leftArrow">←</button>
+            <img id="theSVGs" class="theSVGs contentTransition" src="./svg/haxe-logo.svg" alt="Dynamic SVG Logo">
+            <p id="theTexts" class="contentTransition">
+                Haxe is an open source high-level strictly-typed
+                programming language with a fast optimizing cross-compiler.<br><br>
+                Haxe can build cross-platform applications targeting JavaScript,
+                C++, C#, Java, JVM, Python, Lua, PHP, Flash, and allows access to each platform's native capabilities.
+                Haxe has its own VMs (HashLink and NekoVM) but can also run in interpreted mode.<br><br>
+                Code written in Haxe can be compiled to any target Haxe supports.<br><br>
+                Haxe is free and open-source software, released under the MIT License.
+            </p>
+            <button id="rightArrow">→</button>
+        </div>
+    </div>
+    <script src="./svgChanger.js"></script>
 </body>
 </html>

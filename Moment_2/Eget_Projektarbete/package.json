@@ -1,6 +1,14 @@
 {
   "devDependencies": {
     "@catppuccin/tailwindcss": "^0.1.6",
-    "tailwindcss": "^3.4.1"
+    "@types/bun": "^1.0.3",
+    "tailwindcss": "^3.4.1",
+    "bun-types": "latest"
+  },
+  "name": "eget_projektarbete",
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

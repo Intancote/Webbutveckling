@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply mocha bg-base
+    @apply mocha bg-base overflow-hidden
 }
 
 .main-pill-nav {
@@ -23,5 +23,29 @@ body {
 }
 
 .cool-nav-text {
-    @apply block lg:inline-block lg:mt-0 hover:text-white py-2 px-4 transition duration-430 font-sans text-subtext1
+    @apply block lg:inline-block lg:mt-0 hover:text-white py-2 px-4 transition duration-430 font-sans text-subtext0
+}
+
+.contentContainer {
+    @apply flex items-center justify-center h-screen mocha font-sans
+}
+
+.contentContainer p {
+    @apply text-subtext1 text-center w-144
+}
+
+.contentContainer button {
+    @apply text-overlay2 px-2 text-6xl pb-3.5 font-candara
+}
+
+.subContentContainer {
+    @apply flex items-center space-x-12 pb-37
+}
+
+.theSVGs {
+    @apply h-88
+}
+
+.contentTransition {
+    @apply transition-opacity duration-500
 }

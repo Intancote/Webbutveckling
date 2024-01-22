@@ -7,6 +7,15 @@ module.exports = {
       transitionDuration: {
         430: "430ms",
       },
+      padding: {
+        37: "9.25rem"
+      },
+      height: {
+        88: "22rem"
+      },
+      width: {
+        144: "36rem"
+      },
       fontFamily: {
         candara: ["Candara"],
       },
