@@ -4,6 +4,12 @@ const svgs = [
     './svg/openFL-logo.svg',
     './svg/lime-logo.svg'
 ];
+const titles = [
+    'Haxe',
+    'HaxeFlixel',
+    'OpenFL',
+    'Lime'
+];
 const texts = [
     `Haxe is an open source high-level strictly-typed programming language with a fast optimizing cross-compiler.
 
@@ -37,6 +43,7 @@ document.getElementById('leftArrow').addEventListener('click', function() {
     const leftArrow = document.getElementById('leftArrow');
     const rightArrow = document.getElementById('rightArrow');
     const theSVGs = document.getElementById('theSVGs');
+    const theTitles = document.getElementById('theTitles');
     const theTexts = document.getElementById('theTexts');
 
     // Disable both arrows during the transition
@@ -45,6 +52,7 @@ document.getElementById('leftArrow').addEventListener('click', function() {
 
     // Fade out the current SVG and text
     theSVGs.style.opacity = '0';
+    theTitles.style.opacity = '0';
     theTexts.style.opacity = '0';
 
     setTimeout(() => {
@@ -53,10 +61,12 @@ document.getElementById('leftArrow').addEventListener('click', function() {
             currentIndex = svgs.length - 1;
         }
         theSVGs.src = svgs[currentIndex];
+        theTitles.innerText = titles[currentIndex];
         theTexts.innerText = texts[currentIndex];
 
         // Fade in the new SVG and text
         theSVGs.style.opacity = '1';
+        theTitles.style.opacity = '1';
         theTexts.style.opacity = '1';
 
         // Re-enable both arrows after the transition
@@ -69,6 +79,7 @@ document.getElementById('rightArrow').addEventListener('click', function() {
     const leftArrow = document.getElementById('leftArrow');
     const rightArrow = document.getElementById('rightArrow');
     const theSVGs = document.getElementById('theSVGs');
+    const theTitles = document.getElementById('theTitles');
     const theTexts = document.getElementById('theTexts');
 
     // Disable both arrows during the transition
@@ -77,6 +88,7 @@ document.getElementById('rightArrow').addEventListener('click', function() {
 
     // Fade out the current SVG and text
     theSVGs.style.opacity = '0';
+    theTitles.style.opacity = '0';
     theTexts.style.opacity = '0';
 
     setTimeout(() => {
@@ -85,10 +97,12 @@ document.getElementById('rightArrow').addEventListener('click', function() {
             currentIndex = 0;
         }
         theSVGs.src = svgs[currentIndex];
+        theTitles.innerText = titles[currentIndex];
         theTexts.innerText = texts[currentIndex];
 
         // Fade in the new SVG and text
         theSVGs.style.opacity = '1';
+        theTitles.style.opacity = '1';
         theTexts.style.opacity = '1';
 
         // Re-enable both arrows after the transition

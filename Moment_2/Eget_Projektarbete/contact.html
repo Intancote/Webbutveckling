@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Page</title>
+    <title>What is Haxe? - Contact</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div id="navbar">
-        <script src="./getNavbar.js"></script>
+        <script src="./js/getNavbar.js"></script>
     </div>
+    <div class="div-form">
+        <form action="/submit_contact" method="post" class="theForm">
+            <h1 class="contactTitle">
+                Contact Us
+            </h1>
+            <label class="top-form" for="name">
+                Name
+            </label>
+            <input class="input_textarea-form" id="name" type="text" placeholder="Name" autocomplete="name">
+
+            <label class="mid-form" for="email">
+                Email
+            </label>
+            <input class="input_textarea-form email-size" id="email" type="email" placeholder="Email" autocomplete="email">
+
+            <label class="mid-form" for="message">
+                Message
+            </label>
+            <textarea class="input_textarea-form textarea-size" id="message" placeholder="Message"></textarea>
+            <br>
+            <button class="submit-form" type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+    <div class="copyright">
+        <h1>Webpage made by: Sepand Sadraei Javahery</h1>
+    </div>
+    <script src="./js/thankYou.js"></script>
 </body>
 </html>

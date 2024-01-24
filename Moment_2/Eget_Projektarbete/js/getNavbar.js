@@ -1,6 +1,6 @@
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', '/navbar.html', true);
+    xhr.open('GET', './navbar.html', true);
     xhr.onreadystatechange = function () {
         if (this.readyState != 4) {
             return;
@@ -10,4 +10,4 @@ window.onload = function() {
         }
     };
     xhr.send();
-};
+});

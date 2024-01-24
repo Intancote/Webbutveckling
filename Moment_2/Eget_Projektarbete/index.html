@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Page</title>
+    <title>What is Haxe? - Home</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div id="navbar">
-        <script src="./getNavbar.js"></script>
+        <script src="./js/getNavbar.js"></script>
     </div>
     <div id="contentContainer" class="contentContainer">
         <div class="subContentContainer">
-            <button id="leftArrow">←</button>
-            <img id="theSVGs" class="theSVGs contentTransition" src="./svg/haxe-logo.svg" alt="Dynamic SVG Logo">
-            <p id="theTexts" class="contentTransition">
-                Haxe is an open source high-level strictly-typed
-                programming language with a fast optimizing cross-compiler.<br><br>
-                Haxe can build cross-platform applications targeting JavaScript,
-                C++, C#, Java, JVM, Python, Lua, PHP, Flash, and allows access to each platform's native capabilities.
-                Haxe has its own VMs (HashLink and NekoVM) but can also run in interpreted mode.<br><br>
-                Code written in Haxe can be compiled to any target Haxe supports.<br><br>
-                Haxe is free and open-source software, released under the MIT License.
-            </p>
-            <button id="rightArrow">→</button>
+            <button id="leftArrow" class="max-sm:pt-12 max-xl:order-1">←</button>
+            <img id="theSVGs" class="theSVGs contentTransition max-xl:order-3" src="./svg/haxe-logo.svg" alt="Dynamic SVG Logo">
+            <div class="max-xl:order-4">
+                <h1 id="theTitles" class="theTitles contentTransition">
+                    Haxe
+                </h1>
+                <p id="theTexts" class="theTexts contentTransition">
+                    Haxe is an open source high-level strictly-typed
+                    programming language with a fast optimizing cross-compiler.<br><br>
+                    Haxe can build cross-platform applications targeting JavaScript,
+                    C++, C#, Java, JVM, Python, Lua, PHP, Flash, and allows access to each platform's native capabilities.
+                    Haxe has its own VMs (HashLink and NekoVM) but can also run in interpreted mode.<br><br>
+                    Code written in Haxe can be compiled to any target Haxe supports.<br><br>
+                    Haxe is free and open-source software, released under the MIT License.
+                </p>
+            </div>
+            <button id="rightArrow" class="max-xl:order-2">→</button>
         </div>
     </div>
-    <script src="./svgChanger.js"></script>
+    <div class="copyright">
+        <h1>Webpage made by: Sepand Sadraei Javahery</h1>
+    </div>
+    <script src="./js/svgChanger.js"></script>
 </body>
 </html>

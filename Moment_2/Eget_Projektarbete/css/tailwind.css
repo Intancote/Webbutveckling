@@ -3,49 +3,149 @@
 @tailwind utilities;
 
 body {
-    @apply mocha bg-base overflow-hidden
+    @apply mocha bg-base xl:overflow-hidden
 }
 
 .main-pill-nav {
-    @apply container mx-auto px-48 text-center pt-4 mocha
+    @apply container mx-auto sm:px-48 px-5 text-center pt-4 mocha
 }
 
 .nav-main {
-    @apply flex items-center justify-center bg-crust rounded-2xl p-6
+    @apply flex items-center justify-center bg-crust max-sm:px-36 rounded-2xl p-6
 }
 
 .nav-option-h2 {
-    @apply font-candara text-5xl tracking-tight text-text
+    @apply font-candara xl:text-5xl sm:text-3xl text-xl sm:tracking-tight max-sm:tracking-tighter text-text
 }
 
 .nav-option-div {
-    @apply text-sm lg:flex-grow
+    @apply text-sm xl:flex-grow
 }
 
 .cool-nav-text {
-    @apply block lg:inline-block lg:mt-0 hover:text-white py-2 px-4 transition duration-430 font-sans text-subtext0
+    @apply block xl:inline-block xl:mt-0 hover:text-white py-2 xl:px-4 transition duration-430 font-sans text-overlay2
 }
 
 .contentContainer {
-    @apply flex items-center justify-center h-screen mocha font-sans
-}
-
-.contentContainer p {
-    @apply text-subtext1 text-center w-144
+    @apply flex items-center justify-center min-h-screen mocha font-sans
 }
 
 .contentContainer button {
-    @apply text-overlay2 px-2 text-6xl pb-3.5 font-candara
+    @apply text-overlay1 px-2 xl:text-6xl sm:text-4xl text-2xl pb-3.5 font-candara
 }
 
 .subContentContainer {
-    @apply flex items-center space-x-12 pb-37
+    @apply flex items-center xl:space-x-12 max-xl:flex-col xl:pb-37
 }
 
 .theSVGs {
-    @apply h-88
+    @apply xl:h-88 sm:h-48 h-36
+}
+
+.theTitles {
+    @apply text-subtext1 text-center xl:text-4xl sm:text-2xl pb-8 max-xl:pt-6
+}
+
+.theTexts {
+    @apply text-subtext0 text-center sm:w-144 w-64 sm:pb-3 pb-24
 }
 
 .contentTransition {
     @apply transition-opacity duration-500
+}
+
+/* Adding Catppuccin color to copyright */
+@keyframes colorCycle {
+    0% { color: #f5e0dc; } /* Rosewater */
+    7% { color: #f2cdcd; } /* Flamingo */
+    14% { color: #f5c2e7; } /* Pink */
+    21% { color: #cba6f7; } /* Mauve */
+    28% { color: #f38ba8; } /* Red */
+    35% { color: #eba0ac; } /* Maroon */
+    42% { color: #fab387; } /* Peach */
+    49% { color: #f9e2af; } /* Yellow */
+    56% { color: #a6e3a1; } /* Green */
+    63% { color: #94e2d5; } /* Teal */
+    70% { color: #89dceb; } /* Sky */
+    77% { color: #74c7ec; } /* Sapphire */
+    84% { color: #89b4fa; } /* Blue */
+    91% { color: #b4befe; } /* Lavender */
+    100% { color: #f5e0dc; } /* Rosewater again */
+}
+
+.copyright {
+    @apply fixed bottom-0 left-0 right-0 text-end p-4 bg-mantle text-white;
+    animation: colorCycle 10s ease infinite;
+}
+
+.div-form {
+    @apply min-h-screen flex items-center justify-center xl:pb-[11.75rem]
+}
+
+.theForm {
+    @apply bg-mantle shadow-lg text-center flex-col rounded max-sm:px-4 px-36 pt-4 pb-6 mb-4
+}
+
+.contactTitle {
+    @apply text-subtext1 text-center font-mono xl:text-4xl sm:text-2xl py-2 pb-6
+}
+
+.top-form {
+    @apply block text-subtext0 xl:text-lg sm:text-sm text-[0.625rem] font-bold mb-2
+}
+
+.mid-form {
+    @apply block text-subtext0 xl:text-lg sm:text-sm text-[0.625rem] font-bold mt-4 mb-2
+}
+
+.input_textarea-form {
+    @apply border-2 bg-neutral-950 border-neutral-900 rounded py-2 px-3 text-neutral-200 leading-tight focus:outline-double outline-slate-600
+}
+
+.email-size {
+    @apply xl:w-72
+}
+
+.textarea-size {
+    @apply resize-none h-64 xl:w-144
+}
+
+.submit-form {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold mt-6 py-2 px-5 rounded-3xl
+}
+
+.thanks-div {
+    @apply text-center
+}
+
+.thanks {
+    @apply text-text xl:text-6xl sm:text-4xl text-2xl font-bold m-8
+}
+
+.bye {
+    @apply text-subtext0 xl:text-2xl sm:text-lg text-sm pt-2
+}
+
+.infoBox {
+    @apply min-h-screen flex items-center justify-center xl:pb-[11.75rem]
+}
+
+.inside-infoBox {
+    @apply bg-mantle shadow-lg text-center flex-col rounded xl:px-36 px-4 pt-4 pb-6 mb-4
+}
+
+.about-h1 {
+    @apply text-subtext1 text-center font-mono xl:text-4xl sm:text-2xl text-lg py-2 pb-4
+}
+
+.about-p-1 {
+    @apply block text-subtext0 xl:text-lg sm:text-sm text-[0.625rem] mb-1
+}
+
+.about-p-2 {
+    @apply block text-subtext0 xl:text-lg sm:text-sm text-[0.625rem] mb-8
+}
+
+.about-p-3 {
+    @apply text-subtext0 xl:text-lg sm:text-sm text-[0.625rem] mb-8 pb-1
 }
